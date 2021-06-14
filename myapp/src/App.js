@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
-import FavoriteRecipes from './components/FavoriteRecipes';
+import FavoriteDigimons from './components/FavoriteDigimons';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends React.Component {
@@ -16,7 +17,7 @@ class App extends React.Component {
               <Main />
             </Route>
             <Route exact path='/favorite'>
-              <FavoriteRecipes />
+              <FavoriteDigimons />
             </Route>
           </Switch>
         </BrowserRouter>
